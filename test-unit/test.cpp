@@ -28,3 +28,12 @@ TEST_CASE("Function: Test 2", "[given]")
 
 	REQUIRE(traverse(graph) == 6);
 }
+
+TEST_CASE("Function: Impossible Test", "[created]")
+{
+    std::vector<std::string> graph = {
+            "s#t"
+    };
+
+    REQUIRE(traverse(graph) == 6);
+}
