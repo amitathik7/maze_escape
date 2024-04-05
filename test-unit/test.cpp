@@ -35,5 +35,5 @@ TEST_CASE("Function: Impossible Test", "[created]")
             "s#t"
     };
 
-    REQUIRE(traverse(graph) == 6);
+    REQUIRE(traverse(graph) == -1);
 }
