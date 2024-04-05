@@ -108,5 +108,5 @@ int traverse(std::vector<std::string> &graph)
 //        cout << endl;
 //    }
 
-    return distance_matrix[row_count - 1][col_count - 1];
+    return (distance_matrix[row_count - 1][col_count - 1] == INT_MAX ? -1 : distance_matrix[row_count - 1][col_count - 1]);
 }
