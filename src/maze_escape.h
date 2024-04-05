@@ -97,13 +97,15 @@ int traverse(std::vector<std::string> &graph)
         distance_matrix[row][col] = (min_dist == INT_MAX ? 0 : min_dist + 1);
     }
 
-    for (vector<int> v : distance_matrix) {
-        for (int i : v) {
-            cout << i << " ";
-        }
+    // This is me printing out the final matrix just for double-checking.
 
-        cout << endl;
-    }
+//    for (vector<int> v : distance_matrix) {
+//        for (int i : v) {
+//            cout << i << " ";
+//        }
+//
+//        cout << endl;
+//    }
 
     return distance_matrix[row_count - 1][col_count - 1];
 }
